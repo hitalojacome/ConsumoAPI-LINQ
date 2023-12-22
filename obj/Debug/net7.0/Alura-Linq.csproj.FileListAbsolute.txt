@@ -1,0 +1,14 @@
+C:\Users\97528\Documents\dev\alura\Alura-Linq\bin\Debug\net7.0\Alura-Linq.exe
+C:\Users\97528\Documents\dev\alura\Alura-Linq\bin\Debug\net7.0\Alura-Linq.deps.json
+C:\Users\97528\Documents\dev\alura\Alura-Linq\bin\Debug\net7.0\Alura-Linq.runtimeconfig.json
+C:\Users\97528\Documents\dev\alura\Alura-Linq\bin\Debug\net7.0\Alura-Linq.dll
+C:\Users\97528\Documents\dev\alura\Alura-Linq\bin\Debug\net7.0\Alura-Linq.pdb
+C:\Users\97528\Documents\dev\alura\Alura-Linq\obj\Debug\net7.0\Alura-Linq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\97528\Documents\dev\alura\Alura-Linq\obj\Debug\net7.0\Alura-Linq.AssemblyInfoInputs.cache
+C:\Users\97528\Documents\dev\alura\Alura-Linq\obj\Debug\net7.0\Alura-Linq.AssemblyInfo.cs
+C:\Users\97528\Documents\dev\alura\Alura-Linq\obj\Debug\net7.0\Alura-Linq.csproj.CoreCompileInputs.cache
+C:\Users\97528\Documents\dev\alura\Alura-Linq\obj\Debug\net7.0\Alura-Linq.dll
+C:\Users\97528\Documents\dev\alura\Alura-Linq\obj\Debug\net7.0\refint\Alura-Linq.dll
+C:\Users\97528\Documents\dev\alura\Alura-Linq\obj\Debug\net7.0\Alura-Linq.pdb
+C:\Users\97528\Documents\dev\alura\Alura-Linq\obj\Debug\net7.0\Alura-Linq.genruntimeconfig.cache
+C:\Users\97528\Documents\dev\alura\Alura-Linq\obj\Debug\net7.0\ref\Alura-Linq.dll
