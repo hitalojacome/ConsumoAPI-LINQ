@@ -4,25 +4,29 @@ namespace Filtros;
 
 internal class LinqFilter
 {
+    // Método estático que filtra e exibe todos os gêneros de músicas
     public static void FiltrarTodosGeneros(List<Music> musicas)
     {
-        var todosGeneros = musicas.Select(genero => genero.Genero) // seleciona apenas o genero das músicas
-        .Distinct() // remove as duplicidades
-        .ToList(); // converte o resultado em uma lista
+        var todosGeneros = musicas.Select(genero => genero.Genero) // Seleciona todos os gêneros
+        .Distinct() // Remove as duplicidades
+        .ToList(); // Converte o resultado em uma lista
 
+        // Imprime os generos no console
         foreach (var genero in todosGeneros)
         {
             Console.WriteLine($"- {genero}");
         }
     }
 
+    // Método estático que filtra e exibe artistas de um gênero específico
     public static void FiltrarArtistasPorGenero(List<Music> musicas, string genero)
     {
-        var artistaPorGenero = musicas.Where(musica => musica.Genero!.Contains(genero)) // encontra as musicas onde o genero corresponde ao genero passado
-        .Select(musica => musica.Artista) // seleciona apenas o artista das músicas
-        .Distinct() // remove as duplicidades
-        .ToList(); // converte o resultado em uma lista
+        var artistaPorGenero = musicas.Where(musica => musica.Genero!.Contains(genero)) // Filtra músicas pelo gênero especificado
+        .Select(musica => musica.Artista) // seleciona artistas
+        .Distinct() // Remove as duplicidades
+        .ToList(); // Converte o resultado em uma lista
 
+        // Imprime no console
         Console.WriteLine($"Exibindo os artistas por gênero musical >>> {genero}");
         foreach (var artista in artistaPorGenero)
         {
@@ -30,11 +34,14 @@ internal class LinqFilter
         }
     }
 
+    // Método estático que filtra e exibe músicas de um artista específico
     public static void FiltrarMusicasPorArtista(List<Music> musicas, string nomeArtista)
     {
+        // Filtra músicas pelo artista especificado
         var musicaArtista = musicas.Where(musica => musica.Artista!.Equals(nomeArtista))
         .ToList(); // converte o resultado em uma lista
 
+        // Imprime no console
         Console.WriteLine(nomeArtista);
         foreach (var musica in musicaArtista)
         {
@@ -42,14 +49,16 @@ internal class LinqFilter
         }
     }
 
+    // Método estático que filtra e exibe músicas de um ano específico
     public static void FiltrarMusicasPorAno(List<Music> musicas, string ano)
     {
-        var musicaAno = musicas.Where(musica => musica.Ano!.Equals(ano)) // encontra as musicas onde o ano corresponde ao ano passado
-        .OrderBy(musicas => musicas.Nome) // ordena as músicas pelo nome
-        .Select(musicas => musicas.Nome) // seleciona apenas o nome das músicas
-        .Distinct() // remove as duplicidades
-        .ToList(); // converte o resultado em uma lista
+        var musicaAno = musicas.Where(musica => musica.Ano!.Equals(ano)) // Filtra músicas pelo ano especificado
+        .OrderBy(musicas => musicas.Nome) // Ordena as músicas pelo nome
+        .Select(musicas => musicas.Nome) // Seleciona apenas o nome das músicas
+        .Distinct() // Remove as duplicidades
+        .ToList(); // Converte o resultado em uma lista
 
+        // Imprime no console
         Console.WriteLine($"Músicas de {ano}");
         foreach (var musica in musicaAno)
         {
