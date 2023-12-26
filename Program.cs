@@ -24,6 +24,7 @@ using (HttpClient client = new())
         LinqFilter.FiltrarArtistasPorGenero(musicas, "hip hop");
         LinqFilter.FiltrarMusicasPorArtista(musicas, "2Pac");
         LinqFilter.FiltrarMusicasPorAno(musicas, "2003");
+        LinqFilter.FiltrarMusicasTonalidade(musicas, "C#");
 
         // Cria uma nova playlist chamada "Hitalo" e adiciona algumas músicas a ela
         var playlistHitalo = new Playlist("Hitalo");
@@ -36,7 +37,6 @@ using (HttpClient client = new())
         playlistHitalo.ExibirPlaylist();
         // Gera um arquivo JSON com suas informações
         playlistHitalo.GerarJson();
-
     }
     catch (Exception e)
     {

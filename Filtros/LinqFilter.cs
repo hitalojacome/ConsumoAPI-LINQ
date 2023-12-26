@@ -65,4 +65,20 @@ internal class LinqFilter
             Console.WriteLine($"{musica} - {ano}");
         }
     }
+
+    // Método estático que filtra e exibe músicas de uma tonalidade específica
+    public static void FiltrarMusicasTonalidade(List<Music> musicas, string tonalidade)
+    {
+        var musicaTonalidade = musicas.Where(musica => musica.Tonalidade!.Equals(tonalidade))
+        .OrderBy(musicas => musicas.Nome) // Ordena as músicas pelo nome
+        .Select(musicas => musicas.Nome)
+        .ToList(); // Converte o resultado em uma lista
+
+        // Imprime no console
+        Console.WriteLine($"Músicas em {tonalidade}\n");
+        foreach (var musica in musicaTonalidade)
+        {
+            Console.WriteLine($"{musica} - {tonalidade}");
+        }
+    }
 }
